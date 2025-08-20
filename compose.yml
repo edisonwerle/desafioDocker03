@@ -1,0 +1,9 @@
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: curso_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo_usr
+      MONGO_INITDB_ROOT_PASSWORD: mongo_pwd
+    ports:
+      - "27017:27017"
